@@ -244,7 +244,7 @@ function setupDemo(setupDemo) {
 
     // create the contract
     var contract = factory.newResource(NS, 'Contract', 'CON_002');
-    contract.delivery = factory.newRelationship(NS, 'Dispensary', 'dispensary@email.com');
+    contract.dispensary = factory.newRelationship(NS, 'Dispensary', 'dispensary@email.com');
     contract.buyer = factory.newRelationship(NS, 'Buyer', 'user@email.com');
     contract.delivery = factory.newRelationship(NS, 'Delivery', 'driver@email.com');
     var tomorrow = setupDemo.timestamp;
